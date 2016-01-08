@@ -55,7 +55,7 @@ public class Graph {
 				//Down
 				if(r < rows -1)
 				{
-					node.adjacent.Add(nodes[cols * (r + 1) + c)]);
+					node.adjacent.Add(nodes[cols * (r + 1) + c]);
 				}
 
 				//Left

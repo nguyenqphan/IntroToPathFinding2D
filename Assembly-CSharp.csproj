@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\__Scripts\Graph.cs" />
      <Compile Include="Assets\__Scripts\Node.cs" />
+     <Compile Include="Assets\__Scripts\Search.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
