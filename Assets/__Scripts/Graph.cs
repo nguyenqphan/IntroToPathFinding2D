@@ -20,7 +20,7 @@ public class Graph {
 		//Loop through the nodes and name them as its index.
 		for(int i = 0; i < nodes.Length; i++)
 		{
-			Node node = new Node();
+			var node = new Node();
 			node.label = i.ToString();
 			nodes[i] = node;	
 		}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class Node : MonoBehaviour {
+public class Node {
 
 	public List<Node> adjacent = new List<Node>();      //List of the node
 	public Node previous = null;						//The previous node
