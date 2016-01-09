@@ -23,6 +23,7 @@ public class Graph {
 			var node = new Node();
 			node.label = i.ToString();
 			nodes[i] = node;	
+
 		}
 
 		//Loop to create grids
