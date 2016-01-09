@@ -26,7 +26,10 @@ public class Graph {
 
 		}
 
-		//Loop to create grids
+		Debug.Log (nodes.Length + " is the number of node.");
+		Debug.Log (nodes[0].label + " is the name of the first node");
+
+		//Loop to create add adjacent nodes to given node. 
 		for(int r = 0; r < rows; r++)
 		{
 			for(int c = 0; c < cols; c++)
@@ -41,7 +44,7 @@ public class Graph {
 
 
 				//Conditions to find all adjacent nodes to a given nodes
-				//Up
+				//Top
 				if(r > 0)
 				{
 					node.adjacent.Add(nodes[cols * (r - 1) + c]);
@@ -53,7 +56,7 @@ public class Graph {
 					node.adjacent.Add(nodes[cols * r + c + 1]);
 				}
 
-				//Down
+				//Botton
 				if(r < rows -1)
 				{
 					node.adjacent.Add(nodes[cols * (r + 1) + c]);
