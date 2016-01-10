@@ -20,7 +20,7 @@ public class PathFindingTest : MonoBehaviour {
 		
 		
 		Search search = new Search(graph);
-		search.Start (graph.nodes[0], graph.nodes[2]);
+		search.Start (graph.nodes[0], graph.nodes[8]);
 
 		while(!search.finished)
 		{
@@ -29,6 +29,10 @@ public class PathFindingTest : MonoBehaviour {
 
 		print ("Search done. Path length " + search.path.Count+ " iteration " + search.iterations);
 		ResetMapGroup (graph);
+
+		foreach (var node in search.path) {
+			GetImage(node.label).color = Color.red;
+		}
 
 	}
 
@@ -43,10 +47,19 @@ public class PathFindingTest : MonoBehaviour {
 	{
 		foreach (var node in graph.nodes) {
 			GetImage(node.label).color = node.adjacent.Count == 0 ? Color.white : Color.green;
+		
 		}
 	}
 
 
+
+	void ResetMapGroud(Graph graph)
+	{
+		foreach(var node in graph.nodes)
+		{
+			GetImage(node.label).color = node.adjacent.Count == 0 ? Color.white : Color.green;
+		}
+	}
 
 	// Update is called once per frame
 	void Update () {
