@@ -44,7 +44,10 @@ public class Search  {
 		{
 			return;
 		}
-		
+
+		//Me: 
+		Debug.Log (path.Count + " Path");
+
 		if (reachable.Count == 0) 
 		{
 			finished = true;
@@ -62,6 +65,7 @@ public class Search  {
 				node = node.previous;
 			}
 			finished = true;
+			Debug.Log (path.Count + " Path after adding");
 			return;
 		}
 		
